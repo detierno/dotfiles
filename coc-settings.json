@@ -1,0 +1,6 @@
+{
+  "git.addedSign.text":   "|",
+  "git.changedSign.text": "|",
+  "git.removedSign.text": "|",
+  "git.signOffset": 10000
+}
