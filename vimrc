@@ -3,13 +3,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
-"Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
-"Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-unimpaired'
 
 Plug 'terryma/vim-multiple-cursors'
@@ -28,9 +24,16 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'mileszs/ack.vim'
 Plug 'hardcoreplayers/spaceline.vim'
 
-Plug 'jeetsukumaran/vim-buffergator'
-
 Plug 'liuchengxu/vim-clap'
+
+Plug 't9md/vim-choosewin'
+Plug 'ludovicchabant/vim-gutentags'
+
+" On probation
+"Plug 'tpope/vim-endwise'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+"Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()
