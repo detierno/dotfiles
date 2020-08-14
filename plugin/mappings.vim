@@ -41,19 +41,19 @@ function ToggleWrap()
  endif
 endfunction
 
-map <F9> :call ToggleWrap()<CR>
-map! <F9> ^[:call ToggleWrap()<CR>
+"map <F9> :call ToggleWrap()<CR>
+"map! <F9> ^[:call ToggleWrap()<CR>
 
 " set text wrapping toggles
-"nmap <silent> <leader>tw :set invwrap<CR>
-"asdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+nnoremap <leader>tw :set wrap!<CR>
+"asdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 " Map the arrow keys to be based on display lines, not physical lines
 map <Down> gj
 map <Up> gk
 
 " Toggle hlsearch with <leader>hs
-nmap <leader>hs :set hlsearch! hlsearch?<CR>
+nnoremap <leader>hs :set hlsearch! hlsearch?<CR>
 
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
