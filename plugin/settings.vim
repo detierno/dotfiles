@@ -55,7 +55,7 @@ set encoding=utf-8  " Set default encoding to UTF-8
 
 " Tabs and Indents {{{
 " ----------------
-set textwidth=80    " Text width maximum chars before wrapping
+"set textwidth=80    " Text width maximum chars before wrapping
 set noexpandtab     " Don't expand tabs to spaces
 set tabstop=2       " The number of spaces a tab is
 set shiftwidth=2    " Number of spaces to use in auto(indent)
@@ -136,13 +136,13 @@ set fillchars+=vert:\|  " add a bar for vertical splits
 set fcs=eob:\           " hide ~ tila
 set list
 set listchars=tab:»·,nbsp:+,trail:·,extends:→,precedes:←
-"set title
+set title
 " Title length.
-"set titlelen=95
+set titlelen=95
 " Title string.
-"let &g:titlestring="
-      "\ %{expand('%:p:~:.')}%(%m%r%w%)
-      "\ %<\[%{fnamemodify(getcwd(), ':~')}\] - Neovim"
+let &g:titlestring="
+			\ %{expand('%:p:~:.')}%(%m%r%w%)
+			\ %<\[%{fnamemodify(getcwd(), ':~')}\] - Neovim"
 
 set showmatch           " Jump to matching bracket
 set matchpairs+=<:>     " Add HTML brackets to pair matching
