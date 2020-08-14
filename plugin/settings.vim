@@ -1,8 +1,10 @@
 ""
 "" Basic Setup
 ""
-set number
-syntax on
+set number            " Show line numbers
+set ruler             " Show line and column number
+syntax enable         " Turn on syntax highlighting allowing local overrides
+"syntax on
 
 filetype plugin indent on
 filetype on
@@ -13,12 +15,12 @@ set termguicolors
 set noswapfile
 set autoread
 
-set guioptions-=m  "no menu
-set guioptions-=T  "no toolbar
-set guioptions-=l
-set guioptions-=L
-set guioptions-=r  "no scrollbar
-set guioptions-=R
+"set guioptions-=m  "no menu
+"set guioptions-=T  "no toolbar
+"set guioptions-=l
+"set guioptions-=L
+"set guioptions-=r  "no scrollbar
+"set guioptions-=R
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -30,9 +32,7 @@ endif
 if has('vim_starting') && !has('nvim') && &compatible
   set nocompatible               " Be iMproved
 endif
-set number            " Show line numbers
-set ruler             " Show line and column number
-syntax enable         " Turn on syntax highlighting allowing local overrides
+
 " Neovim disallow changing 'enconding' option after initialization
 " see https://github.com/neovim/neovim/pull/2929 for more details
 set encoding=utf-8  " Set default encoding to UTF-8

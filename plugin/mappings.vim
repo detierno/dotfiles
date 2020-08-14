@@ -33,8 +33,20 @@ nmap <leader>es :sp <C-R>=expand('%:h').'/'<cr>
 nmap <leader>ev :vsp <C-R>=expand('%:h').'/'<cr>
 nmap <leader>et :tabe <C-R>=expand('%:h').'/'<cr>
 
+function ToggleWrap()
+ if (&wrap == 1)
+   set nowrap
+ else
+   set wrap
+ endif
+endfunction
+
+map <F9> :call ToggleWrap()<CR>
+map! <F9> ^[:call ToggleWrap()<CR>
+
 " set text wrapping toggles
-nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
+"nmap <silent> <leader>tw :set invwrap<CR>
+"asdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 
 " Map the arrow keys to be based on display lines, not physical lines
 map <Down> gj

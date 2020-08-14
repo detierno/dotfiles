@@ -29,6 +29,16 @@ Plug 'liuchengxu/vim-clap'
 Plug 't9md/vim-choosewin'
 Plug 'ludovicchabant/vim-gutentags'
 
+Plug 'vim-ruby/vim-ruby'
+Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+
+Plug 'tpope/vim-rails'
+Plug 'godlygeek/tabular'
+Plug 'mattn/emmet-vim'
+
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+
 " On probation
 "Plug 'tpope/vim-endwise'
 "Plug 'vim-airline/vim-airline'
