@@ -11,7 +11,8 @@ vnoremap : ;
 noremap : ;
 noremap ; :
 
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>n
+    \ :<C-u>Defx -resume -toggle -buffer-name=tab`tabpagenr()`<CR>
 
 " format the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
@@ -33,6 +34,9 @@ nmap <leader>es :sp <C-R>=expand('%:h').'/'<cr>
 nmap <leader>ev :vsp <C-R>=expand('%:h').'/'<cr>
 nmap <leader>et :tabe <C-R>=expand('%:h').'/'<cr>
 
+nmap <silent>j <Plug>(accelerated_jk_gj)
+nmap <silent>k <Plug>(accelerated_jk_gk)
+
 function ToggleWrap()
  if (&wrap == 1)
    set nowrap
@@ -46,7 +50,6 @@ endfunction
 
 " set text wrapping toggles
 nnoremap <leader>tw :set wrap!<CR>
-"asdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 " Map the arrow keys to be based on display lines, not physical lines
 map <Down> gj
@@ -160,3 +163,15 @@ else
   imap <C-9> <Esc>9gt
 endif
 
+
+" Tab switch
+"nmap <leader>1 <Plug>BuffetSwitch(1)
+"nmap <leader>2 <Plug>BuffetSwitch(2)
+"nmap <leader>3 <Plug>BuffetSwitch(3)
+"nmap <leader>4 <Plug>BuffetSwitch(4)
+"nmap <leader>5 <Plug>BuffetSwitch(5)
+"nmap <leader>6 <Plug>BuffetSwitch(6)
+"nmap <leader>7 <Plug>BuffetSwitch(7)
+"nmap <leader>8 <Plug>BuffetSwitch(8)
+"nmap <leader>9 <Plug>BuffetSwitch(9)
+"nmap <leader>0 <Plug>BuffetSwitch(10)

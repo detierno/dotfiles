@@ -3,8 +3,6 @@
 ""
 "set number            " Show line numbers
 "set ruler             " Show line and column number
-"syntax enable         " Turn on syntax highlighting allowing local overrides
-"syntax on
 "
 " Borrowed from ThinkVim
 set mouse=nv                 " Disable mouse in command-line mode
@@ -25,6 +23,9 @@ set formatoptions-=o         " Disable comment-continuation (normal 'o'/'O')
 filetype plugin indent on
 filetype on
 filetype indent on
+
+syntax enable                 " Turn on syntax highlighting allowing local overrides
+syntax on
 
 set cursorline
 set termguicolors
@@ -55,8 +56,8 @@ set encoding=utf-8  " Set default encoding to UTF-8
 
 " Tabs and Indents {{{
 " ----------------
-"set textwidth=80    " Text width maximum chars before wrapping
-set noexpandtab     " Don't expand tabs to spaces
+"set textwidth=80   " Text width maximum chars before wrapping
+set expandtab       " Expand tabs to spaces
 set tabstop=2       " The number of spaces a tab is
 set shiftwidth=2    " Number of spaces to use in auto(indent)
 set softtabstop=-1  " Automatically keeps in sync with shiftwidth
@@ -148,7 +149,7 @@ set showmatch           " Jump to matching bracket
 set matchpairs+=<:>     " Add HTML brackets to pair matching
 set matchtime=1         " Tenths of a second to show the matching paren
 
-set showtabline=2       " Always show the tabs line
+"set showtabline=2       " Always show the tabs line
 set winwidth=30         " Minimum width for active window
 set winminwidth=10      " Minimum width for inactive windows
 " set winheight=4         " Minimum height for active window
@@ -158,7 +159,7 @@ set helpheight=12       " Minimum help window height
 set previewheight=12    " Completion preview height
 
 set showcmd             " Show command in status line
-set cmdheight=2         " Height of the command line
+set cmdheight=1         " Height of the command line
 set cmdwinheight=5      " Command-line lines
 set noequalalways       " Don't resize windows on split or close
 set laststatus=2        " Always show a status line
