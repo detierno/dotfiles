@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/denis/.vim'
 let g:netrw_dirhist_7='/home/denis/Code/srh/api'
 let g:netrw_dirhist_6='/home/denis/Code/srh'
 let g:netrw_dirhist_5='/home/denis/Code/srh/api'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_2='/home/denis/.vim'
 let g:netrw_dirhist_1='/home/denis/.vim/plugin'
 let g:netrw_dirhist_0='/home/denis/.vim'
 let g:netrw_dirhist_9='/home/denis/Code/srh/api'
-let g:netrw_dirhist_8='/home/denis/Code/srh/api/app/models'

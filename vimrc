@@ -3,8 +3,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
-Plug 'dracula/vim', { 'as': 'dracula' }
 
+"colorschemes
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'joshdick/onedark.vim'
+
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'morhetz/gruvbox'
 
 Plug 'tpope/vim-unimpaired'
@@ -26,6 +30,8 @@ Plug 'mileszs/ack.vim'
 Plug 'hardcoreplayers/spaceline.vim'
 
 Plug 'liuchengxu/vim-clap'
+
+Plug 'vn-ki/coc-clap'
 
 Plug 't9md/vim-choosewin'
 Plug 'ludovicchabant/vim-gutentags'
@@ -66,9 +72,7 @@ call plug#end()
 
 set encoding=UTF-8
 
-"filetype plugin indent on
-"syntax enable         " Turn on syntax highlighting allowing local overrides
+"colorscheme dracula
+colorscheme neodark
 
-colorscheme dracula
-
-syntax on
+let loaded_netrwPlugin = 1

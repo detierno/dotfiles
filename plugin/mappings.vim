@@ -19,6 +19,7 @@ nnoremap <leader>fef :normal! gg=G``<CR>
 
 nnoremap <leader>p :Clap files<CR>
 nnoremap <leader>b :Clap buffers<CR>
+nnoremap <leader>c :Clap coc_symbols<CR>
 
 
 " cd to the directory containing the file in the buffer
