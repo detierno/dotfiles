@@ -35,6 +35,7 @@ Plug 'vn-ki/coc-clap'
 
 Plug 't9md/vim-choosewin'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'liuchengxu/vista.vim'
 
 Plug 'vim-ruby/vim-ruby'
 Plug 'elixir-editors/vim-elixir'
